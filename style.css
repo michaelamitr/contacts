@@ -8,6 +8,7 @@
   border-radius: 10px;
   font-family: monospace;
 }
+
 .contact {
   background-color: #f3f3f3;
   border-radius: 10px;
@@ -16,6 +17,7 @@
   margin: 15px;
   width: 400px;
 }
+
 .photo {
   width: 120px;
   height: 120px;
@@ -24,8 +26,10 @@
 }
 
 .info {
+  /*Přepsala jsem margin 20px na 0px, protože podle vzoru mi přijde, že tam nemá být, ale nevím, jestli jsem si tím jen "neulehčila práci".*/
   margin-left: 20px;
 }
+
 .info p {
   font-size: 22px;
 }
@@ -40,3 +44,30 @@
 }
 
 /* ----Tvoje styly----- */
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+.info {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
